@@ -9,19 +9,19 @@
 
 
 <div width="50%">
-<center ><img src="assets/ui.png" ></img></center>
+<center ><img src="docs/assets/ui.png" ></img></center>
 </div>
 
 
 ## 结果 
 
-| 实验方法和过程可视化结果（2维）                              | 实验方法和过程可视化结果（3维）                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 2D                                                           | 3D                                                           |
-| 双因素选升法2D<br /><img src="assets/Orthogonal-Rotation-2D-fps5.gif" width="100%"></img> | 双因素选升法3D<br /><img src="assets/Orthogonal-Rotation-3D-fps5.gif" width="100%"></img> |
-| <center>双因素对开法2D</center><br/><img src="assets/TwoWays-001.gif" width="100%"></img> |                                                              |
-| 双因素平行线法2D<br /><img src="assets/parallel-001.gif" width="100%"></img> |                                                              |
-| <img src="assets/simpleopt-001.gif" width="100%"></img>      |                                                              |
+|               实验方法和过程可视化结果（2维）                |               实验方法和过程可视化结果（3维）                |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                              2D                              |                              3D                              |
+| 双因素选升法2D<br /><img src="docs/assets/Orthogonal-Rotation-2D-fps5.gif" width="100%"></img> | 双因素选升法3D<br /><img src="docs/assets/Orthogonal-Rotation-3D-fps5.gif" width="100%"></img> |
+| <center>双因素对开法2D</center><br/><img src="docs/assets/TwoWays-001.gif" width="100%"></img> |                                                              |
+| 双因素平行线法2D<img src="docs/assets/parallel-001.gif" width="100%"></img> |                                                              |
+| 单纯形法2D<img src="docs/assets/simpleopt-001.gif" width="100%"></img> |                                                              |
 
 > 注：图标题并非几种方法的标准英文翻译。
 

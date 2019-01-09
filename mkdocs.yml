@@ -1,1 +1,4 @@
-site_name: My Docs
+site_name: EDS lab Docs
+theme: readthedocs
+repo_url: https://github.com/liuqidev/EDS-lab
+copyright: EDS lab, an experiment design visulization UI.
