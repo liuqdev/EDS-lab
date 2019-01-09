@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>快速开始 - EDS lab Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u5feb\u901f\u5f00\u59cb";
+    var mkdocs_page_input_path = "ch01-quickstart.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> EDS lab Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">EDS lab</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">快速开始</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">快速开始</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#0-python">0. 安装Python和相关依赖</a></li>
+        
+            <li><a class="toctree-l3" href="#1">1. 运行使用</a></li>
+        
+            <li><a class="toctree-l3" href="#2">2. 下载工程代码</a></li>
+        
+            <li><a class="toctree-l3" href="#3">3. 安装相关依赖</a></li>
+        
+            <li><a class="toctree-l3" href="#4">4. 运行项目</a></li>
+        
+            <li><a class="toctree-l3" href="#5">5.本地查看项目</a></li>
+        
+            <li><a class="toctree-l3" href="#6">6. 运行实验脚本</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ch02-admin/">管理和运行</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ch03-features/">功能特性</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ch04-QA/">常见问题</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ch05-log/">变更日志</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">EDS lab Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>快速开始</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/liuqidev/EDS-lab/edit/master/docs/ch01-quickstart.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">快速开始</h1>
+<h2 id="0-python">0. 安装Python和相关依赖</h2>
+<ul>
+<li><code>Python</code> - 推荐python3.6及以上</li>
+<li>
+<p><code>pip</code> - 推荐18.1及以上</p>
+</li>
+<li>
+<p>其他：见文件<code>requirements.txt</code>，内容如下，安装请见后文：</p>
+</li>
+</ul>
+<pre><code class="python">Django
+wooey
+django-sslify
+django-storages
+django-celery
+django-autoslug
+boto
+waitress
+psycopg2
+collectfast
+honcho
+</code></pre>
+
+<h2 id="1">1. 运行使用</h2>
+<h3 id="_2">* 创建虚拟环境（非必须，推荐）</h3>
+<p>为了防止项目工程的依赖和用户自带的python环境相冲突，例如python版本不一致。建议为工程创建虚拟环境，创建方法见<a href="https://virtualenv.pypa.io/en/latest/userguide/">virtualenv</a>, 这里推荐使用<a href="https://virtualenvwrapper.readthedocs.io/en/latest/install.html#basic-installation">virtualenvwrapper</a>，一个更快捷的<code>virtualenv</code>的封装来创建python3的虚拟环境。</p>
+<p>例如，使用<code>virtualenvwrapper</code>创建了名称为<code>wooey</code>的python3环境，然后在这个环境下运行本项目。</p>
+<p><img alt="" src="../assets/workon.png" /></p>
+<h2 id="2">2. 下载工程代码</h2>
+<p><img alt="" src="../assets/download.png" /></p>
+<p>下载地址：<a href="https://github.com/liuqidev/EDS-lab">EDS-lab</a></p>
+<p>下载后解压，进入到<code>EDS-lab</code>路径下。</p>
+<h2 id="3">3. 安装相关依赖</h2>
+<p>使用<code>pip</code>安装相关依赖，<a href="requirements.txt">requirements.txt</a>。</p>
+<pre><code class="python">pip install -r requirements.txt
+</code></pre>
+
+<h2 id="4">4. 运行项目</h2>
+<p>对于<em>windows</em>，在当前路径（即<code>manage.py</code>所在的路径）下，<strong>分别启动两个终端</strong>：</p>
+<p><img alt="" src="../assets/one-terminal.png" /></p>
+<p>终端1输入：</p>
+<pre><code class="powershell">celery -A MyWooProject worker --pool=eventlet -l info
+</code></pre>
+
+<p>效果入上图所示。</p>
+<p><img alt="" src="../assets/another-terminal.png" /></p>
+<p>终端2输入：</p>
+<pre><code class="python">python manage.py runserver 0:8000
+</code></pre>
+
+<blockquote>
+<p>注：端口号可以任意指定。</p>
+</blockquote>
+<p>对于Linux和其他操作系统，请查看<a href="https://wooey.readthedocs.io/en/latest/running_wooey.html#through-two-separate-processes">这里</a>。</p>
+<h2 id="5">5.本地查看项目</h2>
+<p>通过步骤5就构建了一个本地服务器来运行本工程。</p>
+<p><img alt="" src="../assets/run.png" /></p>
+<p>使用浏览器，输入<code>http://localhost:8000/</code>,即可查看工程。</p>
+<h2 id="6">6. 运行实验脚本</h2>
+<p><img alt="" src="../assets/run-script.png" /></p>
+<p><img alt="" src="../assets/run-script-suss.png" /></p>
+<p>点击脚本名称，输入相关参数，即可运行。例如上图是创建计算<code>[0, 100)</code>以内所有正数和的任务，点击提交，任务会被添加到任务队列中，等待片刻，结果输出到界面，结果产生的文件以列表形式陈列于下方。</p>
+<p>运行其他脚本过程类似。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ch02-admin/" class="btn btn-neutral float-right" title="管理和运行">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="EDS lab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>EDS lab, an experiment design visulization UI.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/liuqidev/EDS-lab/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ch02-admin/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
