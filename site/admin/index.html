@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>后台管理 - EDS lab Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "\u540e\u53f0\u7ba1\u7406";
+    var mkdocs_page_input_path = "admin.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> EDS lab Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">EDS-lab</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">后台管理</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">后台管理</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#1">1.创建超级用户</a></li>
+        
+            <li><a class="toctree-l3" href="#2">2. 注册、登录后台管理系统</a></li>
+        
+            <li><a class="toctree-l3" href="#3">3. 用户管理</a></li>
+        
+            <li><a class="toctree-l3" href="#4">4. 脚本管理</a></li>
+        
+            <li><a class="toctree-l3" href="#5">5. 增加脚本</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../features/">功能特性</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../quickstart/">快速开始</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">EDS lab Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>后台管理</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/liuqidev/EDS-lab/edit/master/docs/admin.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="_1">后台管理</h1>
+<p>本项目的后台系统是基于Django的，这里已经为您创建了一个用户：</p>
+<ul>
+<li>用户名 admin</li>
+<li>密码 ADMIN12345678</li>
+</ul>
+<p>你可以使用上述用户名和密码来执行相关管理工作，其中包括创建新的用户。</p>
+<h2 id="1">1.创建超级用户</h2>
+<p>超级用户即系统管理员，这里和所有django项目一样，在后台中输入<code>createsuperuser</code>进行管理员的创建。</p>
+<p><img alt="" src="../assets/create-su.png" /></p>
+<h2 id="2">2. 注册、登录后台管理系统</h2>
+<p><img alt="" src="../assets/login.png" /></p>
+<p><img alt="" src="../assets/backend.png" /></p>
+<p>两种方式登录：</p>
+<ol>
+<li>在用户界面右上角输入用户名和密码</li>
+<li>或者在地址栏中输入<code>ip:端口号/admin</code>，输入用户名或密码登录。</li>
+</ol>
+<p>系统也支持注册新用户并登录。</p>
+<h2 id="3">3. 用户管理</h2>
+<p><img alt="" src="../assets/delete-user.png" /></p>
+<p>如上图所示可在后台进行用户管理。</p>
+<h2 id="4">4. 脚本管理</h2>
+<p><img alt="" src="../assets/delete-all.png" /></p>
+<p><img alt="" src="../assets/delete-one-sure.png" /></p>
+<p><img alt="" src="../assets/delete-all-suss.png" /></p>
+<h2 id="5">5. 增加脚本</h2>
+<p><img alt="" src="../assets/add-script.png" /></p>
+<p><img alt="" src="../assets/import-script.png" /></p>
+<p>有两种方式来增加脚本。第一种方式通过后台来添加（不推荐，没办法添加绝对路径，checksum无法计算，从而无法添加成功）。</p>
+<p><img alt="" src="../assets/add-script-method2.png" /></p>
+<p>另外一种通过终端来添加，在终端中输入:</p>
+<pre><code class="python">python manage.py addscript [path-to-script/]script.py
+</code></pre>
+
+<p>即<code>addscript</code>后接脚本的路径，出现<code>Concerted 1 scripts</code>表明添加成功。</p>
+<blockquote>
+<p><strong>特别注意</strong>： 添加的脚本中不能含有中文，<strong>包括注释</strong>中都不能有中文等其他字符。</p>
+</blockquote>
+<p><img alt="" src="../assets/add-script-method2-suss.png" /></p>
+<p><img alt="" src="../assets/script-info.png" /></p>
+<p>进入后台管理系统中，发现脚本被成功添加了进来，点击进入后可以修改脚本信息（非源程序）。</p>
+<p><img alt="" src="../assets/add-new-one.png" /></p>
+<p>查看站点，发现有新的脚本被添加进来。</p>
+<p><img alt="" src="../assets/suss-heart.png" /></p>
+<p><img alt="" src="../assets/suss-heart2.png" /></p>
+<p>运行新脚本，结果如上图。</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../features/" class="btn btn-neutral float-right" title="功能特性">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="EDS-lab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>EDS lab, an experiment design visulization UI.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/liuqidev/EDS-lab/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../features/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

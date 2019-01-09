@@ -1,4 +1,4 @@
-# 后台管理
+# 管理和运行
 
 本项目的后台系统是基于Django的，这里已经为您创建了一个用户：
 
@@ -68,7 +68,7 @@
 python manage.py addscript [path-to-script/]script.py
 ```
 
-即`addscript`后接脚本的路径，出现`Concerted 1 scripts`表明添加成功。
+即`addscript`后接脚本的路径，出现`Concerted 1 scripts`表明添加成功。
 
 > **特别注意**： 添加的脚本中不能含有中文，**包括注释**中都不能有中文等其他字符。
 
@@ -81,6 +81,8 @@ python manage.py addscript [path-to-script/]script.py
 ![](assets/add-new-one.png)
 
 查看站点，发现有新的脚本被添加进来。
+
+## 6. 运行脚本 
 
 ![](assets/suss-heart.png)
 

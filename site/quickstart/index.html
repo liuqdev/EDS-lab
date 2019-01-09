@@ -53,6 +53,16 @@
     <a class="" href="..">EDS-lab</a>
 	    </li>
           
+            <li class="toctree-l1">
+		
+    <a class="" href="../admin/">后台管理</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../features/">功能特性</a>
+	    </li>
+          
             <li class="toctree-l1 current">
 		
     <a class="current" href="./">快速开始</a>
@@ -62,9 +72,19 @@
     
         <ul>
         
-            <li><a class="toctree-l3" href="#python">安装Python和相关依赖</a></li>
+            <li><a class="toctree-l3" href="#0-python">0. 安装Python和相关依赖</a></li>
         
-            <li><a class="toctree-l3" href="#_2">运行使用</a></li>
+            <li><a class="toctree-l3" href="#1">1. 运行使用</a></li>
+        
+            <li><a class="toctree-l3" href="#2">2. 下载工程代码</a></li>
+        
+            <li><a class="toctree-l3" href="#3">3. 安装相关依赖</a></li>
+        
+            <li><a class="toctree-l3" href="#4">4. 运行项目</a></li>
+        
+            <li><a class="toctree-l3" href="#5">5.本地查看项目</a></li>
+        
+            <li><a class="toctree-l3" href="#6">6. 运行实验脚本</a></li>
         
         </ul>
     
@@ -108,15 +128,93 @@
             <div class="section">
               
                 <h1 id="_1">快速开始</h1>
-<h2 id="python">安装Python和相关依赖</h2>
+<h2 id="0-python">0. 安装Python和相关依赖</h2>
 <ul>
-<li>Python - python3.5(推荐)</li>
-<li>pip</li>
+<li><code>Python</code> - 推荐python3.6及以上</li>
+<li>
+<p><code>pip</code> - 推荐18.1及以上</p>
+</li>
+<li>
+<p>其他：见文件<code>requirements.txt</code>，内容如下，安装请见后文：</p>
+</li>
 </ul>
-<h2 id="_2">运行使用</h2>
-<h3 id="1">1.创建虚拟环境（非必须，推荐）</h3>
-<h3 id="2">2. 安装相关依赖</h3>
-<h3 id="3">3. 运行项目</h3>
+<pre><code class="python">amqp==2.3.2
+billiard==3.5.0.5
+celery==4.2.1
+Click==7.0
+clinto==0.2.1
+cycler==0.10.0
+Django==1.11.17
+django-autoslug==1.9.3
+django-celery-results==1.0.4
+dnspython==1.16.0
+eventlet==0.24.1
+greenlet==0.4.15
+Jinja2==2.10
+jsonfield==2.0.2
+kiwisolver==1.0.1
+kombu==4.2.2
+livereload==2.6.0
+Markdown==3.0.1
+markdown-include==0.5.1
+MarkupSafe==1.1.0
+matplotlib==3.0.2
+mkdocs==1.0.4
+monotonic==1.5
+numpy==1.15.4
+pandas==0.23.4
+pyparsing==2.3.0
+pypiwin32==223
+python-dateutil==2.7.5
+pytz==2018.7
+pywin32==224
+PyYAML==3.13
+scipy==1.2.0
+seaborn==0.9.0
+six==1.12.0
+tornado==5.1.1
+vine==1.1.4
+wooey==0.10.0
+</code></pre>
+
+<h2 id="1">1. 运行使用</h2>
+<h3 id="_2">* 创建虚拟环境（非必须，推荐）</h3>
+<p>为了防止项目工程的依赖和用户自带的python环境相冲突，例如python版本不一致。建议为工程创建虚拟环境，创建方法见<a href="https://virtualenv.pypa.io/en/latest/userguide/">virtualenv</a>, 这里推荐使用<a href="https://virtualenvwrapper.readthedocs.io/en/latest/install.html#basic-installation">virtualenvwrapper</a>，一个更快捷的<code>virtualenv</code>的封装来创建python3的虚拟环境。</p>
+<p>例如，使用<code>virtualenvwrapper</code>创建了名称为<code>wooey</code>的python3环境，然后在这个环境下运行本项目。</p>
+<p><img alt="" src="../assets/workon.png" /></p>
+<h2 id="2">2. 下载工程代码</h2>
+<p><img alt="" src="assets/download" /></p>
+<p>下载地址：<a href="https://github.com/liuqidev/EDS-lab">EDS-lab</a></p>
+<p>下载后解压，进入到<code>EDS-lab</code>路径下。</p>
+<h2 id="3">3. 安装相关依赖</h2>
+<p>使用<code>pip</code>安装相关依赖，<a href="../requirements.txt">requirements.txt</a>。</p>
+<pre><code class="python">pip install -r requirements.txt
+</code></pre>
+
+<h2 id="4">4. 运行项目</h2>
+<p>对于<em>windows</em>，在当前路径（即<code>manage.py</code>所在的路径）下，<strong>分别启动两个终端</strong>：</p>
+<p><img alt="" src="../assets/one-terminal.png" /></p>
+<p>终端1输入：</p>
+<pre><code class="powershell">celery -A MyWooProject worker --pool=eventlet -l info
+</code></pre>
+
+<p>效果入上图所示。</p>
+<p><img alt="" src="../assets/another-terminal.png" /></p>
+<p>终端2输入：</p>
+<pre><code class="python">python manage.py runserver 0:8000
+</code></pre>
+
+<blockquote>
+<p>注：端口号可以任意指定。</p>
+</blockquote>
+<p>对于Linux和其他操作系统，请查看<a href="https://wooey.readthedocs.io/en/latest/running_wooey.html#through-two-separate-processes">这里</a>。</p>
+<h2 id="5">5.本地查看项目</h2>
+<p>通过步骤5就构建了一个本地服务器来运行本工程。</p>
+<p><img alt="" src="../assets/run.png" /></p>
+<p>使用浏览器，输入<code>http://localhost:8000/</code>,即可查看工程。</p>
+<h2 id="6">6. 运行实验脚本</h2>
+<p><img alt="" src="../assets/run-script.png" /></p>
+<p>点击脚本名称，输入相关参数，即可运行。例如上图是创建计算<code>[0, 100)</code>以内所有正数和的任务，点击提交。</p>
               
             </div>
           </div>
@@ -125,7 +223,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href=".." class="btn btn-neutral" title="EDS-lab"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../features/" class="btn btn-neutral" title="功能特性"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -155,7 +253,7 @@
           <a href="https://github.com/liuqidev/EDS-lab/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../features/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>
